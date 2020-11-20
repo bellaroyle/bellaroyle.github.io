@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Royle</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <script src="https://kit.fontawesome.com/28b4b4614e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -14,6 +16,7 @@
 
 <body>
     <section id="home-page">
+        <h1>Bella Royle</h1>
 
         <div class="socials">
             <a href="https://github.com/bellaroyle" title="Github">
@@ -26,22 +29,13 @@
     </section>
 
     <section id="about-page">
+        <h1>About Me</h1>
 
         <p>intro paragraph here</p>
 
         <div id="skills-container">
 
-            <div class="skills">
-                <h2>Languages & Tools</h2>
-                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                <i class="devicon-nodejs-plain colored" title="nodejs"></i>
-                <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
-                <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
-                <i class="devicon-github-plain" title="Github"></i>
-                <i class="devicon-postgresql-plain-wordmark colored" title="postgreSQL"></i>
-                <i class="devicon-python-plain colored" title="Python"></i>
-            </div>
-            <div class="skills">
+            <div class="skills-box">
                 <h2>Skills </h2>
                 <p>
                     Pair-programming<br>
@@ -52,41 +46,83 @@
                 </p>
             </div>
 
+            <div class="skills-box">
+                <h2>Languages & Tools</h2>
+                <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
+                <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
+                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                <i class="devicon-github-plain colored" title="Github"></i>
+                <i class="devicon-postgresql-plain colored" title="postgreSQL"></i>
+                <br />
+                <i class="devicon-visualstudio-plain colored" title="VS Code"></i>
+                <i class="devicon-python-plain colored" title="Python"></i>
+            </div>
+
         </div>
     </section>
 
     <section id="projects-page">
         <h1>My Work</h1>
+        <div id="projects-container">
 
-        <!-- <video src="./media/pokemon.mov" width=600px height=auto controls>A screen recording of the Pokemon game being
-            played.</video>
-        <br> -->
-        <a href="https://github.com/bellaroyle">My Github</a>
+            <div class="projects">
+                <div class="project-images" id="website"></div>
+                <div class="overlay">
+                    <h2>This Website!</h2>
+                    <p>
+                        HTML5 | CSS3
+                    </p>
+                    <!-- buttons -->
+                    <a href="https://github.com/bellaroyle/portfolio"><button class="project-buttons">More Info &
+                            Source Code</button></a>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="project-images" id="pokemon"></div>
+                <div class="overlay">
+                    <h2>Command Line Pokemon Battle Game</h2>
+                    <p>
+                        Object Oriented Programming with JavaScript | Inquirer.js
+                    </p>
+                    <!-- buttons -->
+                    <a href="https://github.com/bellaroyle/Pokemon-Battler-Game"><button class="project-buttons">More
+                            Info & Source Code</button></a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <a href="https://github.com/bellaroyle"><i class="devicon-github-plain colored" title="My Github"
+                id="github-link"></i></a>
 
     </section>
 
+
+
     <section id="contact-page">
         <h1>Contact Me</h1>
-        <form method-"POST">
-            <section class="name">
+
+        <div>
+            <form id="contact-form" method="POST">
+
                 <label for="name">Your name:</label>
-                <br>
-                <input type="text" name="name" required>
-            </section>
-            <section class="email">
+                <input type="text" id="name" name="name" placeholder="Your name here..." />
+
                 <label for="email">Your email:</label>
-                <br>
-                <input type="text" name="email" placeholder="your-name@email.com" required>
-            </section>
-            <section class="message">
+                <input type="text" id="email" name="email" placeholder="your-email@address.com" />
+
                 <label for="message">Your message:</label>
-                <br>
-                <textarea id="message" name="message" rows="3" cols="30" required></textarea>
-            </section>
-            <section class="submission">
-                <input type="submit" value="Submit">
-            </section>
-        </form>
+                <textarea name="message" id="message" rows="4" placeholder="Hi Bella..."></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+
+            </form>
+        </div>
     </section>
 
 </html>
