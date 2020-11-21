@@ -52,7 +52,7 @@
         width: 45%;
         border-radius: 10px;
         height: auto;
-        border: 2px solid rgba(11, 207, 181, 0.5);
+         border: 2px ; /*solid rgba(11, 207, 181, 0.5); */
         margin: 5px;
         padding: 5px 25px;
     }
