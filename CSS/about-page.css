@@ -1,21 +1,60 @@
     /* ABOUT PAGE */
+
+#me-intro {
+    /* margin: 0 auto;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    width: 100%; */
+
+    margin: 0px auto;
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	text-align: left;
+    
+}
+
+#me-intro img {
+    max-width:378px;
+    max-height:284px;
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+#me-intro p {
+    /* display: block; */
+}
+
+
+
+
+
+
     #skills-container {
         width: 100%;
-        /* justify-content: center; */
-        margin: 0 auto;
+        justify-content: center;
+        margin: 0px auto;
         display: flex;
         flex-wrap: wrap;
-        /* align-content: center; */
-        margin: 15px auto;
+        align-content: center;
+        
     }
     
     .skills-box {
         width: 45%;
         border-radius: 10px;
         height: auto;
-        border: 4px; /* solid  rgb(207, 141, 223);*/
+        border: 2px solid rgba(11, 207, 181, 0.5);
         margin: 5px;
-        padding: 5px;
+        padding: 5px 25px;
     }
     
     .skills-box i {
