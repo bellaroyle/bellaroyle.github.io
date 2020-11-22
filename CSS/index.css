@@ -1,13 +1,28 @@
 * {
     box-sizing: border-box;
-    
-    }
+    scroll-behavior: smooth;
+}
     
  body {
         font-family: "Roboto",sans-serif;
-        background-color: rgb(255,255,255)
+        /* background-color: rgb(255,255,255) */
         /* background: rgba(239, 229, 243, 0.666); */
+      
 } 
+
+/* body::after {
+    content: "";
+    background-image: url('../media/blue_tiles.jpg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;   
+} */
+
 h1 {
     font-weight: 500;
     font-size: 45px;

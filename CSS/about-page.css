@@ -16,14 +16,14 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 5px;
+	padding: 0 100px;
 	text-align: left;
     
 }
 
 #me-intro img {
-    max-width:378px;
-    max-height:284px;
+    max-width: 250px;
+    max-height: 338px;
     width: auto;
     height: auto;
     margin: 30px;
