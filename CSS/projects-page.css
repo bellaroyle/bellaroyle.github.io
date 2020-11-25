@@ -1,74 +1,71 @@
 #projects-container {
-    margin: 15px auto;
-    width: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    /* min-width: 500px;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  /* min-width: 500px;
     min-height:500px;
     max-height: 800px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    /* padding: 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* padding: 2px; */
 }
 
 .projects {
-    cursor: pointer;
-    box-shadow: 1px 5px 5px 1px rgba(38, 19, 44, 0.322);
-    transition: 0.3s;
-    margin: 5px;
-    max-width: 100%;
-    width: 48%;
-    height: 350px;
-    position: relative;
+  cursor: pointer;
+  box-shadow: 1px 5px 5px 1px rgba(38, 19, 44, 0.322);
+  transition: 0.3s;
+  margin: 5px;
+  max-width: 100%;
+  width: 48%;
+  height: 350px;
+  position: relative;
 }
 
 .overlay {
-    padding: 5px;
-    z-index: 5;
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s ease;
-    opacity: 0;
-    padding-top: 50px;
+  padding: 5px;
+  z-index: 5;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  padding-top: 50px;
 }
 
 .projects:hover .overlay {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .project-images {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 #pokemon {
-    background-image: url("../media/pokemon-screenshot.png");
+  background-image: url("../media/pokemon-screenshot.png");
 }
-  
-
 
 .project-buttons {
-font-size: 16px;
-font-weight: bold;
-background-color: white;
-padding: 10px;
-border: 2px solid black;
-transition: all .3s ease-in-out; 
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-buttons:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-
 #github-link {
-    font-size: 30px;
+  font-size: 30px;
 }
