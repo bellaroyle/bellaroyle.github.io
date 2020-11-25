@@ -3,7 +3,7 @@
 
 #contact-form {
 	margin: 0 auto;
-	width: 400px;
+	width: 30em;
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -17,13 +17,17 @@
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 3px;
+	border: 1px solid rgb(97, 97, 97);
 }
 
 #contact-form textarea {
+	font-family: "Roboto",sans-serif;
 	padding: 10px 10px;
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 3px;
+	border: 1px solid rgb(97, 97, 97);
+
 }
 
 #contact-form label {
@@ -36,6 +40,7 @@
     width: 100px;
 	padding: 10px 0;
 	background-color: rgba(11, 207, 181, 0.75);
+	border: 1px solid rgba(11, 207, 181, 0.75);
 	transition: all 0.3s ease-in;
 }
 

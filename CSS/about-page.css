@@ -20,14 +20,26 @@
 	text-align: left;
     
 }
-
+/* not sure if these two nessasary  */
+#pic-box {
+    /* width:30%; */
+    /* border:2px solid black; */
+    width: auto;
+    height: auto;
+    
+}
+#paragraph-box {
+    /* width:70%; */
+    /* border:2px solid black; */
+}
+ 
 #me-intro img {
     max-width: 250px;
     max-height: 338px;
     width: auto;
     height: auto;
     margin: 30px;
-}
+}  
 
 #me-intro p {
     /* display: block; */

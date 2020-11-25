@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./CSS/about-page.css">
     <link rel="stylesheet" href="./CSS/projects-page.css">
     <link rel="stylesheet" href="./CSS/contact-page.css">
+    <script src="./index.js" defer></script>
     <!-- links for icons & fonts  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <script src="https://kit.fontawesome.com/28b4b4614e.js" crossorigin="anonymous"></script>
@@ -22,6 +23,16 @@
 </head>
 
 <body>
+    <main>
+
+    </main>
+    <nav id="navbar">
+        <a href="#home-page">Home</a>
+        <a href="#about-page">About</a>
+        <a href="#projects-page">Work</a>
+        <a href="#contact-page">Contact</a>
+    </nav>
+
     <section id="home-page">
         <h1>Bella Royle</h1>
 
@@ -38,14 +49,19 @@
     <section id="about-page">
         <h1>About Me</h1>
         <div id="me-intro">
-            <img src="media/me.jpeg" alt="A picture of me enjoying life">
-            <p>
-                intro paragraph here
-                <br>
-                <br>
-                writing in some stuff for now so that this is abit beefier so that
-                i can do some nice css stuff for the picture
-            </p>
+            <div id="pic-box">
+                <img src="media/me.jpeg" alt="A picture of me enjoying life">
+            </div>
+            <div id="paragraph-box">
+                <p>
+                    intro paragraph here
+                    <br>
+                    <br>
+                    writing in some stuff for now so that this is abit beefier so that
+                    i can do some nice css stuff for the picture
+                </p>
+            </div>
+
         </div>
         <h2>Skills </h2>
         <div id="skills-container">
@@ -119,7 +135,7 @@
                 <input type="text" id="name" name="name" placeholder="Your name here..." />
 
                 <label for="email">Your email:</label>
-                <input type="text" id="email" name="email" placeholder="your-email@address.com" />
+                <input type="email" id="email" name="email" placeholder="your-email@address.com" />
 
                 <label for="message">Your message:</label>
                 <textarea name="message" id="message" rows="4" placeholder="Hi Bella..."></textarea>
@@ -129,5 +145,9 @@
             </form>
         </div>
     </section>
-
+    </main> 
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
 </html>
