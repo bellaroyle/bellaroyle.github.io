@@ -1,7 +1,7 @@
-    /* ABOUT PAGE */
+/* ABOUT PAGE */
 
 #me-intro {
-    /* margin: 0 auto;
+  /* margin: 0 auto;
     display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -9,74 +9,66 @@
     flex-wrap: wrap;
     width: 100%; */
 
-    margin: 0px auto;
-	width: 100%;
-	max-width: 1000px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 0 100px;
-	text-align: left;
-    
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  text-align: left;
 }
 /* not sure if these two nessasary  */
 #pic-box {
-    /* width:30%; */
-    /* border:2px solid black; */
-    width: auto;
-    height: auto;
-    
+  /* width:30%; */
+  /* border:2px solid black; */
+  width: auto;
+  height: auto;
 }
 #paragraph-box {
-    /* width:70%; */
-    /* border:2px solid black; */
+  /* width:70%; */
+  /* border:2px solid black; */
 }
- 
+
 #me-intro img {
-    max-width: 250px;
-    max-height: 338px;
-    width: auto;
-    height: auto;
-    margin: 30px;
-}  
+  max-width: 250px;
+  max-height: 338px;
+  width: auto;
+  height: auto;
+  margin: 30px;
+}
 
 #me-intro p {
-    /* display: block; */
+  /* display: block; */
 }
 
+#skills-container {
+  width: 100%;
+  justify-content: center;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
+.skills-box {
+  width: 45%;
+  border-radius: 10px;
+  height: auto;
+  border: 2px; /*solid rgba(11, 207, 181, 0.5); */
+  margin: 5px;
+  padding: 5px 25px;
+}
 
+.skills-box i {
+  font-size: 70px;
+  line-height: 5rem;
+}
 
-
-
-    #skills-container {
-        width: 100%;
-        justify-content: center;
-        margin: 0px auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        
-    }
-    
-    .skills-box {
-        width: 45%;
-        border-radius: 10px;
-        height: auto;
-         border: 2px ; /*solid rgba(11, 207, 181, 0.5); */
-        margin: 5px;
-        padding: 5px 25px;
-    }
-    
-    .skills-box i {
-        font-size: 70px;
-        line-height: 5rem;
-    }
-    
-    .language-icons {
-        display: inline-flex;
-        justify-content: center;
-        padding: 5px;
-        font-size: 50px;
-    }
+.language-icons {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 50px;
+}
