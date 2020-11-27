@@ -1,27 +1,21 @@
 #projects-container {
   margin: 15px auto;
   width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  /* min-width: 500px;
-    min-height:500px;
-    max-height: 800px; */
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  /* padding: 2px; */
 }
 
 .projects {
   cursor: pointer;
+  display: flex;
   box-shadow: 1px 5px 5px 1px rgba(38, 19, 44, 0.322);
-  transition: 0.3s;
   margin: 5px;
   max-width: 100%;
-  width: 48%;
-  height: 350px;
+  min-width: 350px;
+  min-height: 350px;
   position: relative;
 }
 
@@ -38,7 +32,7 @@
 }
 
 .projects:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .project-images {
