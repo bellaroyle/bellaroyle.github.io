@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./CSS/projects-page.css">
     <link rel="stylesheet" href="./CSS/contact-page.css">
     <script src="./index.js" defer></script>
+    <script src="https://unpkg.com/thpace"></script>
+    <script src="background.js" defer></script>
     <!-- links for icons & fonts  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <script src="https://kit.fontawesome.com/28b4b4614e.js" crossorigin="anonymous"></script>
@@ -23,131 +25,133 @@
 
 <body>
     <main>
-    <nav id="navbar">
-        <a href="#home-page">Home</a>
-        <a href="#about-page">About</a>
-        <a href="#projects-page">Work</a>
-        <a href="#contact-page">Contact</a>
-    </nav>
+        <nav id="navbar">
+            <a href="#home-page">Home</a>
+            <a href="#about-page">About</a>
+            <a href="#projects-page">Work</a>
+            <a href="#contact-page">Contact</a>
+        </nav>
+        <section id="home-page">
+            <canvas id="make-me-cool"></canvas>
 
-    <section id="home-page">
-        <h1>Bella Royle</h1>
+            <h1>Bella Royle</h1>
 
-        <div class="socials">
-            <a style=" text-decoration: none;" href="https://github.com/bellaroyle" title="Github">
-                <i class="devicon-github-plain" title="Github"></i></a>
-            <a style=" text-decoration: none;" href="https://www.linkedin.com/in/bella-royle-a55632197/"
-                title="LinkedIn"><i class="devicon-linkedin-plain"></i>
-            </a>
-        </div>
-
-    </section>
-
-    <section id="about-page">
-        <h1>About Me</h1>
-        <div id="me-intro">
-            <div id="pic-box">
-                <img src="media/me.jpeg" alt="Me in some woods">
-            </div>
-            <div id="paragraph-box">
-                <p>
-                    intro paragraph here
-                    <br>
-                    <br>
-                    writing in some stuff for now so that this is abit beefier so that
-                    i can do some nice css stuff for the picture
-                </p>
+            <div class="socials">
+                <a style=" text-decoration: none;" href="https://github.com/bellaroyle" title="Github">
+                    <i class="devicon-github-plain" title="Github"></i></a>
+                <a style=" text-decoration: none;" href="https://www.linkedin.com/in/bella-royle-a55632197/"
+                    title="LinkedIn"><i class="devicon-linkedin-plain"></i>
+                </a>
             </div>
 
-        </div>
-        <h2>Skills </h2>
-        <div id="skills-container">
+        </section>
 
-            <div class="skills-box">
-                <p>
-                    Pair-programming<br>
-                    Remote collaboration<br>
-                    Test-Driven Development<br>
-                    Version control - using Git & Github<br>
-
-                </p>
-            </div>
-
-            <div class="skills-box">
-                <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
-                <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
-                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-                <i class="devicon-github-plain colored" title="Github"></i>
-                <i class="devicon-postgresql-plain colored" title="postgreSQL"></i>
-                <i class="devicon-visualstudio-plain colored" title="VS Code"></i>
-                <i class="devicon-python-plain colored" title="Python"></i>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projects-page">
-        <h1>My Work</h1>
-        <div id="projects-container">
-
-            <div class="projects">
-                <div class="project-images" id="website"></div>
-                <div class="overlay">
-                    <h2>This Website!</h2>
-                    <p>
-                        HTML5 | CSS3
-                    </p>
-                    <!-- buttons -->
-                    <a href="./projects/website.html"><button class="project-buttons">More Info</button></a>
+        <section id="about-page">
+            <h1>About Me</h1>
+            <div id="me-intro">
+                <div id="pic-box">
+                    <img src="media/me.jpeg" alt="Me in some woods">
                 </div>
-            </div>
-
-            <div class="projects">
-                <div class="project-images" id="pokemon"></div>
-                <div class="overlay">
-                    <h2>Command Line Pokemon Battle Game</h2>
+                <div id="paragraph-box">
                     <p>
-                        Object Oriented Programming with JavaScript | Inquirer.js
+                        intro paragraph here
+                        <br>
+                        <br>
+                        writing in some stuff for now so that this is abit beefier so that
+                        i can do some nice css stuff for the picture
                     </p>
-                    <!-- buttons -->
-                    <a href="./projects/pokemon.html"><button class="project-buttons">More Info</button></a>
                 </div>
+
             </div>
+            <h2>Skills </h2>
+            <div id="skills-container">
 
-        </div>
-        <p>View more of my work:</p>
-        <a style=" text-decoration: none;" href="https://github.com/bellaroyle"><i class="devicon-github-plain colored"
-                title="My Github" id="github-link"></i></a>
+                <div class="skills-box">
+                    <p>
+                        Pair-programming<br>
+                        Remote collaboration<br>
+                        Test-Driven Development<br>
+                        Version control - using Git & Github<br>
 
-    </section>
+                    </p>
+                </div>
 
-    <section id="contact-page">
-        <h1>Contact Me</h1>
+                <div class="skills-box">
+                    <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
+                    <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                    <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                    <i class="devicon-github-plain colored" title="Github"></i>
+                    <i class="devicon-postgresql-plain colored" title="postgreSQL"></i>
+                    <i class="devicon-visualstudio-plain colored" title="VS Code"></i>
+                    <i class="devicon-python-plain colored" title="Python"></i>
+                </div>
 
-        <div>
-            <form id="contact-form" method="POST">
+            </div>
+        </section>
 
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name here..." />
+        <section id="projects-page">
+            <h1>My Work</h1>
+            <div id="projects-container">
 
-                <label for="email">Your email:</label>
-                <input type="email" id="email" name="email" placeholder="your-email@address.com" />
+                <div class="projects">
+                    <div class="project-images" id="website"></div>
+                    <div class="overlay">
+                        <h2>This Website!</h2>
+                        <p>
+                            HTML5 | CSS3
+                        </p>
+                        <!-- buttons -->
+                        <a href="./projects/website.html"><button class="project-buttons">More Info</button></a>
+                    </div>
+                </div>
 
-                <label for="message">Your message:</label>
-                <textarea name="message" id="message" rows="4" placeholder="Hi Bella..."></textarea>
+                <div class="projects">
+                    <div class="project-images" id="pokemon"></div>
+                    <div class="overlay">
+                        <h2>Command Line Pokemon Battle Game</h2>
+                        <p>
+                            Object Oriented Programming with JavaScript | Inquirer.js
+                        </p>
+                        <!-- buttons -->
+                        <a href="./projects/pokemon.html"><button class="project-buttons">More Info</button></a>
+                    </div>
+                </div>
 
-                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <p>View more of my work:</p>
+            <a style=" text-decoration: none;" href="https://github.com/bellaroyle"><i
+                    class="devicon-github-plain colored" title="My Github" id="github-link"></i></a>
 
-            </form>
-        </div>
-        <!-- <footer>
+        </section>
+
+        <section id="contact-page">
+            <h1>Contact Me</h1>
+
+            <div>
+                <form id="contact-form" method="POST">
+
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name here..." />
+
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" placeholder="your-email@address.com" />
+
+                    <label for="message">Your message:</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Hi Bella..."></textarea>
+
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+
+                </form>
+            </div>
+            <!-- <footer>
             <p>footer</p>
         </footer> -->
-    </section>
-    </main> 
+        </section>
+    </main>
     <footer>
         <!-- <p>footer</p> -->
     </footer>
 </body>
+
 </html>

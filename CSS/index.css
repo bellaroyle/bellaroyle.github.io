@@ -7,6 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   margin: 0;
+  border:2px solid black;
   /* background-color: rgb(255,255,255) */
   /* background: rgba(239, 229, 243, 0.666); */
 }
@@ -33,7 +34,7 @@ nav a {
 
 nav a:hover {
   /* background-color: rgba(11, 207, 181, 0.25); */
-  color: rgba(11, 207, 181, 1);
+  color: #00e1ff;
 }
 
 /* Dropdown Button */
@@ -117,24 +118,21 @@ section {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  /* background-color: white; */
   padding: 10px 10px 50px 10px;
   text-align: center;
 }
 
-/* WORK PAGE */
+#make-me-cool {
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  position:absolute;
+  opacity: 0.65;
+}
 
-/* #home-page {
-  display: flex;
-} */
 
-/* CONTACT PAGE */
-
-/* footer */
 footer {
-  /* position: fixed; */
-  /* left: 0;
-  right: 0;*/
+
   bottom: 0;
   width: 100%;
   height: 40px;
@@ -142,4 +140,15 @@ footer {
   background-color: black;
   color: rgba(11, 207, 181, 1);
   /* padding: 5px 0; */
+}
+
+#menu {
+  text-align: right;
+}
+#menu-button {
+  margin-right: 20px;
+  margin-top: 15px;
+  background-color: white;
+  font-size: 40px;
+  border: none;
 }

@@ -39,14 +39,14 @@
     margin: 10px;
     width: 100px;
 	padding: 10px 0;
-	background-color: rgba(11, 207, 181, 0.75);
-	border: 1px solid rgba(11, 207, 181, 0.75);
+	background-color: #00d9ff ;
+	border:none;
 	transition: all 0.3s ease-in;
 }
 
 #contact-form button:hover {
 	cursor: pointer;
-	background-color:rgba(11, 207, 181, 1);
+	background-color:#815aff;
 }
 
 #contact-form i {
