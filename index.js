@@ -1,7 +1,7 @@
 
 // func to make nav bar dissapear when scroll down but appear when scroll up 
 let prevScrollPosition = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
   let currentScrollPosition = window.pageYOffset;
   if (prevScrollPosition > currentScrollPosition) {
     document.getElementById("navbar").style.top = "0";
@@ -10,3 +10,4 @@ window.onscroll = function() {
   }
   prevScrollPosition = currentScrollPosition;
 }
+
