@@ -1,64 +1,109 @@
-const canvas = document.getElementById('canvas1');
-const ctx = canvas.getContext('2d');
-if (window.innerWidth > 600) {
-    canvas.width = 600; //window.innerWidth;
-    canvas.height = 600; //window.innerHeight;
-}
-else {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-console.log(canvas.width)
-
-let particleArray = []
-
-
+let canvas = null
 const markerFont = new FontFace('Permanent Marker', 'url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap)')
 markerFont.load().then((loadedFace) => { document.fonts.add(loadedFace) }).catch()
-// console.log(canvas.width, canvas.height)
-console.log(window.innerWidth, window.innerHeight)
-console.log(window.screen.availWidth, window.screen.availHeight)
-console.log(window.screen.width, window.screen.height)
-console.log((window.innerWidth - 600) / 2)
-// alter these for positioning 
-let adjustX = 120
-let adjustY = 150
+let adjustX = 140
+let adjustY = 200
+let particleArray = []
 
-// console.log(ctx)
-
-
-// handle mouse 
 const mouse = {
     x: null,
     y: null,
     radius: 100
 }
 
-window.addEventListener('mousemove', (event) => {
-    mouse.x = event.x - (window.innerWidth - 600) / 2;
-    mouse.y = event.y - (window.innerHeight - 600) / 2;
-    // mouse.radius = 150;
-    // console.log(mouse.x, mouse.y)
-})
+if (document.getElementById('canvas1')) {
+    if (window.innerWidth > 1200) {
+        canvas = document.getElementById('canvas1');
+        canvas.width = 1200;
+        canvas.height = 900;
+        adjustX = 210
+        adjustY = 340
 
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
+            mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
+        })
+    } else {
+        canvas = document.getElementById('canvas1');
+        canvas.width = 800;
+        canvas.height = 600;
+        adjustX = 120
+        adjustY = 200
+
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
+            mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
+        })
+    }
+}
+else {
+    canvas = document.getElementById('canvas2');
+
+    if (window.innerWidth > 600) {
+        canvas.width = 600;
+        canvas.height = 900;
+        adjustX = 80
+        adjustY = 200
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
+            mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
+        })
+    } else {
+        canvas.width = 400;
+        canvas.height = 600;
+        adjustX = 40
+        adjustY = 130
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
+            mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
+        })
+    }
+
+}
+
+
+const ctx = canvas.getContext('2d');
 
 ctx.fillStyle = 'white';
-ctx.font = "60px Permanent Marker"
-// ctx.textAlign = "center";
-ctx.fillText('Bella  Royle', 0, 60)
-const textCoordinates = ctx.getImageData(0, 0, 1000, 150);
+let textCoordinates = []
+if (document.getElementById('canvas1')) {
+    if (window.innerWidth > 1200) {
+        ctx.font = "120px Permanent Marker"
+        ctx.fillText('Bella  Royle', 0, 90)
+        textCoordinates = ctx.getImageData(0, 0, 1000, 150);
+    }
+    else {
+        ctx.font = "90px Permanent Marker"
+        ctx.fillText('Bella  Royle', 0, 70)
+        textCoordinates = ctx.getImageData(0, 0, 1000, 150);
+    }
+
+} else {
+    if (window.innerWidth > 600) {
+        ctx.font = "120px Permanent Marker"
+        ctx.fillText(' Bella ', 0, 95)
+        ctx.fillText(' Royle ', 0, 245)
+        textCoordinates = ctx.getImageData(0, 0, 1000, 300);
+    } else {
+        ctx.font = "90px Permanent Marker"
+        ctx.fillText(' Bella ', 0, 70)
+        ctx.fillText(' Royle ', 0, 195)
+        textCoordinates = ctx.getImageData(0, 0, 1000, 300);
+    }
+}
+
 
 class Particle {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.size = 0.5;
+        this.size = 1;
         this.baseX = this.x;
         this.baseY = this.y;
         this.density = (Math.random() * 40) + 5
     }
     draw() {
-        ctx.fillStyle = '#703cff';
+        ctx.fillStyle = '#86ffff';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.closePath();
@@ -92,7 +137,6 @@ class Particle {
 }
 
 const init = () => {
-    // console.log(textCoordinates.height, textCoordinates.width)
     particleArray = []
     for (let y = 0, y2 = textCoordinates.height; y < y2; y++) {
         for (let x = 0, x2 = textCoordinates.width; x < x2; x++) {
@@ -105,7 +149,7 @@ const init = () => {
     }
 }
 init()
-// console.log(particleArray.length)
+
 
 const animate = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height)

@@ -11,3 +11,4 @@ window.onscroll = function () {
   prevScrollPosition = currentScrollPosition;
 }
 
+// console.log(window.innerWidth)

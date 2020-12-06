@@ -37,6 +37,11 @@
         <section id="home-page">
 
             <canvas id="canvas1"></canvas>
+            <script>
+                console.log(window.screen.width, window.screen.height)
+                if (window.innerHeight > window.innerWidth)
+                    document.getElementById("canvas1").id = "canvas2";
+            </script>
             <div id="home-container">
 
                 <!-- <h1>Bella Royle</h1> -->
