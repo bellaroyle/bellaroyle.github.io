@@ -10,14 +10,17 @@ const mouse = {
     y: null,
     radius: 100
 }
-
+// if the screen in landscape the canvas  has id canvas1, if it is portrait, it has id canvas2
 if (document.getElementById('canvas1')) {
+    // Set different canvas sizes so that it can be responsive to different screens. 
+    // I am working on making the canvas linearly responsive, however currently if i do that the mouse hover will be in the wrong position
+    // adjustX and adjustY position the particles in the canvas 
     if (window.innerWidth > 1200) {
         canvas = document.getElementById('canvas1');
         canvas.width = 1200;
-        canvas.height = 900;
-        adjustX = 210
-        adjustY = 340
+        canvas.height = 600;
+        adjustX = 220
+        adjustY = 180
 
         window.addEventListener('mousemove', (event) => {
             mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
@@ -63,11 +66,12 @@ else {
 
 
 const ctx = canvas.getContext('2d');
-
 ctx.fillStyle = 'white';
 let textCoordinates = []
+
 if (document.getElementById('canvas1')) {
     if (window.innerWidth > 1200) {
+        // creates text and stores the coordinates of it in an array
         ctx.font = "120px Permanent Marker"
         ctx.fillText('Bella  Royle', 0, 90)
         textCoordinates = ctx.getImageData(0, 0, 1000, 150);
@@ -77,7 +81,6 @@ if (document.getElementById('canvas1')) {
         ctx.fillText('Bella  Royle', 0, 70)
         textCoordinates = ctx.getImageData(0, 0, 1000, 150);
     }
-
 } else {
     if (window.innerWidth > 600) {
         ctx.font = "120px Permanent Marker"
@@ -94,6 +97,7 @@ if (document.getElementById('canvas1')) {
 
 
 class Particle {
+    // creates particles for given x and y coordinates 
     constructor(x, y) {
         this.x = x;
         this.y = y;
@@ -103,6 +107,7 @@ class Particle {
         this.density = (Math.random() * 40) + 5
     }
     draw() {
+        // makes particles solid circles
         ctx.fillStyle = '#86ffff';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
@@ -110,13 +115,13 @@ class Particle {
         ctx.fill()
     }
     update() {
+        // makes the particles move if within mouse.radius
         let dx = mouse.x - this.x
         let dy = mouse.y - this.y;
         let distance = Math.sqrt(dx * dx + dy * dy)
         let forceDirectionX = dx / distance;
         let forceDirectionY = dy / distance;
-        let maxDistance = mouse.radius
-        let force = (maxDistance - distance) / maxDistance
+        let force = (mouse.radius - distance) / mouse.radius
         let directionX = forceDirectionX * force * this.density
         let directionY = forceDirectionY * force * this.density
 
@@ -137,6 +142,7 @@ class Particle {
 }
 
 const init = () => {
+    // creates particles for the text 
     particleArray = []
     for (let y = 0, y2 = textCoordinates.height; y < y2; y++) {
         for (let x = 0, x2 = textCoordinates.width; x < x2; x++) {
