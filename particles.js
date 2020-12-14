@@ -1,6 +1,7 @@
+
+
+
 let canvas = null
-const markerFont = new FontFace('Permanent Marker', 'url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap)')
-markerFont.load().then((loadedFace) => { document.fonts.add(loadedFace) }).catch()
 let adjustX = 140
 let adjustY = 200
 let particleArray = []
@@ -19,7 +20,7 @@ if (document.getElementById('canvas1')) {
         canvas = document.getElementById('canvas1');
         canvas.width = 1200;
         canvas.height = 600;
-        adjustX = 220
+        adjustX = 275
         adjustY = 180
 
         window.addEventListener('mousemove', (event) => {
@@ -30,7 +31,7 @@ if (document.getElementById('canvas1')) {
         canvas = document.getElementById('canvas1');
         canvas.width = 800;
         canvas.height = 600;
-        adjustX = 120
+        adjustX = 155
         adjustY = 200
 
         window.addEventListener('mousemove', (event) => {
@@ -45,17 +46,17 @@ else {
     if (window.innerWidth > 600) {
         canvas.width = 600;
         canvas.height = 900;
-        adjustX = 80
+        adjustX = 110
         adjustY = 200
         window.addEventListener('mousemove', (event) => {
             mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
             mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
         })
     } else {
-        canvas.width = 400;
-        canvas.height = 600;
-        adjustX = 40
-        adjustY = 130
+        canvas.width = 300;
+        canvas.height = 450;
+        adjustX = 15
+        adjustY = 40
         window.addEventListener('mousemove', (event) => {
             mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
             mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);
@@ -68,32 +69,40 @@ else {
 const ctx = canvas.getContext('2d');
 ctx.fillStyle = 'white';
 let textCoordinates = []
+// const markerFont = new FontFace('Lucida Console', 'url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap)')
+// markerFont.load().then((loadedFace) => {
+//     document.fonts.add(loadedFace)
+// }).catch(err => {
+//     console.dir(err)
+// })
+
 
 if (document.getElementById('canvas1')) {
     if (window.innerWidth > 1200) {
         // creates text and stores the coordinates of it in an array
-        ctx.font = "120px Permanent Marker"
+        ctx.font = "italic 120px American Typewriter"
         ctx.fillText('Bella  Royle', 0, 90)
         textCoordinates = ctx.getImageData(0, 0, 1000, 150);
     }
     else {
-        ctx.font = "90px Permanent Marker"
+        ctx.font = "italic 90px American Typewriter"
         ctx.fillText('Bella  Royle', 0, 70)
         textCoordinates = ctx.getImageData(0, 0, 1000, 150);
     }
 } else {
     if (window.innerWidth > 600) {
-        ctx.font = "120px Permanent Marker"
+        ctx.font = "italic 120px American Typewriter"
         ctx.fillText(' Bella ', 0, 95)
         ctx.fillText(' Royle ', 0, 245)
         textCoordinates = ctx.getImageData(0, 0, 1000, 300);
     } else {
-        ctx.font = "90px Permanent Marker"
+        ctx.font = "italic 90px American Typewriter"
         ctx.fillText(' Bella ', 0, 70)
-        ctx.fillText(' Royle ', 0, 195)
+        ctx.fillText(' Royle ', 0, 145)
         textCoordinates = ctx.getImageData(0, 0, 1000, 300);
     }
 }
+
 
 
 class Particle {
