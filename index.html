@@ -5,24 +5,20 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Royle</title>
+    <title>Portfolio | Bella Royle</title>
 
     <!-- links to style sheets & JS -->
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/home-page.css">
     <link rel="stylesheet" href="./CSS/about-page.css">
     <link rel="stylesheet" href="./CSS/projects-page.css">
-    <link rel="stylesheet" href="./CSS/contact-page.css">
     <script src="./index.js" defer></script>
-    <!-- <script src="./particles.js" defer></script> -->
 
     <!-- links for icons & fonts  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <script src="https://kit.fontawesome.com/28b4b4614e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> -->
     <script src="./particles.js" defer></script>
 
 </head>
@@ -33,7 +29,6 @@
             <a href="#home-page">Home</a>
             <a href="#about-page">About</a>
             <a href="#projects-page">Work</a>
-            <a href="#contact-page">Contact</a>
         </nav>
         <section id="home-page">
 
@@ -48,6 +43,7 @@
 
             <div class="socials">
 
+                <br />
                 <br />
                 <a style=" text-decoration: none;" href="https://github.com/bellaroyle" title="Github">
                     <i class="devicon-github-plain" title="Github" id="Github-icon"></i></a>
@@ -67,12 +63,22 @@
                     <img src="media/me.jpeg" alt="Me in some woods">
                 </div>
                 <div id="paragraph-box">
+                    <h2>Hi I'm Bella!</h2>
                     <p>
-                        intro paragraph here
+                        Im a full stack developer (Northcoders Alum), Maths graduate and newbie running
+                        enthusiast.
                         <br>
                         <br>
-                        writing in some stuff for now so that this is abit beefier so that
-                        i can do some nice css stuff for the picture
+                        I first learnt to code when in my third year at university. I realised it was the first thing I
+                        had studied that I have never got bored at, even after hours of staring at the same chunk of
+                        code trying to find my mistake <em>(which nine times out of ten turned out to be a silly typo,
+                            thankfully I discovered code spell checker extensions)</em>. This is because there is
+                        always something new an exciting to learn that can make what your coding so much better.
+                        <br>
+                        <br>
+                        Having completed Northcoders' software development bootcamp <em>(nearly)</em>. I am looking to
+                        take the next step and put my new skills to the test by starting a Junior Software developer
+                        role.
                     </p>
                 </div>
 
@@ -113,7 +119,7 @@
                     <div class="overlay">
                         <h2>This Website!</h2>
                         <p>
-                            HTML5 | CSS3
+                            HTML5 | CSS3 | JavaScript
                         </p>
                         <!-- buttons -->
                         <a href="./projects/website.html"><button class="project-buttons">More Info</button></a>
@@ -121,12 +127,27 @@
                 </div>
 
                 <div class="projects">
+                    <div class="project-images" id="mr-men-news"></div>
+                    <div class="overlay">
+                        <h2>Mr Men News</h2>
+                        <p>
+                            React | JavaScript | CSS | Express | postgreSQL | axios | Jest
+                        </p>
+                        <p>A full stack reddit-style news app</p>
+                        <!-- buttons -->
+                        <a href="./projects/mr-men-news.html"><button class="project-buttons">More Info</button></a>
+                    </div>
+                </div>
+
+
+                <div class="projects">
                     <div class="project-images" id="pokemon"></div>
                     <div class="overlay">
-                        <h2>Command Line Pokemon Battle Game</h2>
+                        <h2>Pokemon Battler</h2>
                         <p>
                             Object Oriented Programming with JavaScript | Inquirer.js
                         </p>
+                        <p>A Pokemon battler game that can be played on the Command line in your computers terminal</p>
                         <!-- buttons -->
                         <a href="./projects/pokemon.html"><button class="project-buttons">More Info</button></a>
                     </div>
@@ -138,33 +159,7 @@
                     class="devicon-github-plain colored" title="My Github" id="github-link"></i></a>
 
         </section>
-
-        <section id="contact-page">
-            <h1>Contact Me</h1>
-
-            <div>
-                <form id="contact-form" method="POST">
-
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your name here..." />
-
-                    <label for="email">Your email:</label>
-                    <input type="email" id="email" name="email" placeholder="your-email@address.com" />
-
-                    <label for="message">Your message:</label>
-                    <textarea name="message" id="message" rows="4" placeholder="Hi Bella..."></textarea>
-
-                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
-
-                </form>
-            </div>
-            <!-- <footer>
-            <p>footer</p>
-        </footer> -->
-        </section>
     </main>
-    <footer>
-        <!-- <p>footer</p> -->
     </footer>
 </body>
 
