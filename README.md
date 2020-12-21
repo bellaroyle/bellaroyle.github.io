@@ -1,1 +1,3 @@
+# Portfolio Website 
 This is where i will add a description of what i have done and used etc 
+I started this website when i was first learning HTML & CSS...
