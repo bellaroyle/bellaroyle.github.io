@@ -42,7 +42,9 @@
   background-position: center;
   background-size: cover;
 }
-
+#mr-men-news{
+  background-image: url("../media/mr-men-news-screenshot.png");
+}
 #pokemon {
   background-image: url("../media/pokemon-screenshot.png");
 }
