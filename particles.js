@@ -98,7 +98,7 @@ if (document.getElementById('canvas1')) {
     } else {
         ctx.font = "italic 90px American Typewriter"
         ctx.fillText(' Bella ', 0, 70)
-        ctx.fillText(' Royle ', 0, 145)
+        ctx.fillText(' Royle ', 0, 155)
         textCoordinates = ctx.getImageData(0, 0, 1000, 300);
     }
 }
