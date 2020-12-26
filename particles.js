@@ -20,7 +20,7 @@ if (document.getElementById('canvas1')) {
         canvas = document.getElementById('canvas1');
         canvas.width = 1200;
         canvas.height = 600;
-        adjustX = 275
+        adjustX = 280
         adjustY = 180
 
         window.addEventListener('mousemove', (event) => {
@@ -31,7 +31,7 @@ if (document.getElementById('canvas1')) {
         canvas = document.getElementById('canvas1');
         canvas.width = 800;
         canvas.height = 600;
-        adjustX = 155
+        adjustX = 160
         adjustY = 200
 
         window.addEventListener('mousemove', (event) => {
@@ -47,7 +47,7 @@ else {
         canvas.width = 600;
         canvas.height = 900;
         adjustX = 110
-        adjustY = 200
+        adjustY = 185
         window.addEventListener('mousemove', (event) => {
             mouse.x = event.x - ((window.innerWidth - canvas.offsetWidth) / 2)
             mouse.y = event.y - ((window.innerHeight - canvas.offsetHeight) / 2);

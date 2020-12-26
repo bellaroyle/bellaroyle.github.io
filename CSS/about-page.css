@@ -22,6 +22,7 @@
   margin-top: 0px;
   margin-bottom: 15px;
 }
+
 #paragraph-box {
   padding: 10px 25px;
   text-align: left;
@@ -34,4 +35,24 @@
     margin-top: 0;
     flex-grow: 1;
   }
+}
+
+#skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#skills-container p {
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: flex;
+}
+#skills-container i {
+  font-size: 1.5rem;
+}
+strong {
+  font-weight: 600;
 }

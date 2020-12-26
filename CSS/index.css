@@ -4,11 +4,11 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   text-align: center;
   margin: 0;
   /* border:2px solid black; */
-  /* background-color: rgb(255,255,255) */
+  background-color: #d3fdfd1c;
   /* background: rgba(239, 229, 243, 0.666); */
 }
 
@@ -31,33 +31,20 @@ nav a {
 }
 
 nav a:hover {
-  color: #86ffff
+  color: #86ffff;
 }
-
-
-/* body::after {
-    content: "";
-    background-image: url('../media/blue_tiles.jpg');
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    position: absolute;
-    z-index: -1;   
-} */
 
 h1 {
   font-weight: 500;
   font-size: 45px;
+  border-bottom: 5px dashed #3dccccc0;
+  /* font-family: "American Typewriter"; */
 }
 
 h2 {
   font-weight: 500;
   font-size: 30px;
 }
-
 section {
   display: flex;
   flex-direction: column;
@@ -67,36 +54,15 @@ section {
   height: 100%;
   text-align: center;
 }
-
-
-
-/* @media only screen and (max-width:350px) {
-  #canvas1 { 
-    width: 280px;
-    height: 250px;
-    background-color: black;
-  }
-}
-@media only screen and (max-width:600px) {
-  #canvas1 { 
-    width: 280px;
-    height: 250px;
-    background-color: black;
-  }
-} */
-
-
 footer {
-
   bottom: 0;
   width: 100%;
-  height: 40px;
-  margin-top: auto;
+  padding-top: 15px;
+  height: 50px;
   background-color: #131313;
-  color: rgba(11, 207, 181, 1);
-  /* padding: 5px 0; */
+  color: white;
+  /* color: rgba(11, 207, 181, 1); */
 }
-
 #menu {
   text-align: right;
 }
@@ -107,7 +73,4 @@ footer {
   font-size: 40px;
   border: none;
 }
-.class {
-  color: #86ffff;
-  background-color: #adfaff;
-}
+/

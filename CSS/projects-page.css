@@ -32,7 +32,7 @@
 }
 
 .projects:hover .overlay,
-.projects:focus .overlay{
+.projects:focus .overlay {
   opacity: 0.95;
 }
 
@@ -43,7 +43,7 @@
   background-position: center;
   background-size: cover;
 }
-#mr-men-news{
+#mr-men-news {
   background-image: url("../media/mr-men-news-screenshot.png");
 }
 #pokemon {
@@ -63,10 +63,15 @@
 .project-buttons:focus {
   transform: scale(1.1);
 }
-.project-buttons:active .projects .overlay{
+.project-buttons:active .projects .overlay {
   opacity: 95%;
 }
 
 #github-link {
+  font-size: 30px;
+}
+
+#github-link:hover,
+#github-link:focus {
   font-size: 30px;
 }
