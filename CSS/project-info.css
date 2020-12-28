@@ -40,6 +40,9 @@
 
 #how-it-works {
   text-align: left;
+  margin: 0px auto;
+  /* padding: 10px; */
+  max-width: 810px;
 }
 #how-it-works h2 {
   font-size: 22px;
