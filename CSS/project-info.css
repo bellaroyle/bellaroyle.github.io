@@ -1,4 +1,4 @@
-#project-info-heading{
+#project-info-heading {
   margin-top: 50px;
 }
 #media-container {
@@ -18,7 +18,6 @@
   margin: 0px auto;
   padding: 10px;
   max-width: 810px;
-
   text-align: left;
 }
 .more-info {
@@ -37,4 +36,17 @@
   cursor: pointer;
   transform: scale(1.1);
   outline: none;
+}
+
+#how-it-works {
+  text-align: left;
+}
+#how-it-works h2 {
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+#how-it-works h3 {
+  font-size: 18px;
+  margin-bottom: 0;
 }

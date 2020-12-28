@@ -17,28 +17,53 @@
         <a href="../index.html#projects-page">Work</a>
     </nav>
 
-    <h1 id="project-info-heading">Full-Stack News Application</h1>
+    <h1 id="project-info-heading">Mr Men News</h1>
     <p class="info-about-project">
-        blah blah blah
+        This is a Full stack reddit-style news website. (Named Mr Men News as all the users have mr men icons.)
         <br>
-
+        <br>
+        For the backend I created a database using <strong>PostgreSQL</strong>. I then used <strong>Knex.js</strong> to interact with it and build an api for my database using an <strong>Express</strong> server. 
+        I created several end points on my api (for details see the backend code below) that I went on to use when making the frontend for the application. 
+        I used <strong>heroku</strong> to host the api and it can be found <a href='https://nc-news-api-br.herokuapp.com/api'>here</a>
+        <br>
+        <br>
+        I built the frontend using React with the help of Material UI for some pre styled components. 
+        I used Netlify to host the application, see the live demo below. 
+        <br>
+        <br> 
+        Watch the video below to see some of the functionality available:
     </p>
     <div id="media-container">
         <div class="media-box">
-            <!-- <video src="" controls>Video of the Game being played</video> -->
+            <video src="../media/Mr-Men-Recording.mov" controls>Video some of the features of the site</video>
         </div>
     </div>
+    <div id="how-it-works">
+        <h2>Some cool features (and some im planning on adding):</h2>
+        <ul>
+            <li><h3>The website is logged in as a user:</h3>
+                This is to allow for features such as adding and deleting your own comments. 
+                There is more functionality I would like to add tht will use this logged in feature such as posting your own article.
+            </li>
+            <li><h3>Login/logout switch</h3>
+                This toggleable switch allows a user to logout which then blocks their ability to post or delete their own comments. 
+                Currently this is hardcoded to the user 'cooljmessy', I am working on an input appearing when trying to login so that any user can login.
+            </li>
+            <li><h3>User Profile page</h3>
+                If you click on a username, it will take you to their profile page which includes their avatar and full name. 
+                This profile page also shows you all the articles by that user. 
+            </li>
+            <li><h3>Sort by and filter</h3>
+                The two bars at the top of the list of articles allow the user to specify the type of articles they see. The bars also show the user how the articles are currently sorted. 
+            </li>
+        </ul>
+    </div>
     <p class="info-about-project">
-        blah blah blah
-        <br>
-        <br>
-        <br>
-        <br>
+        There are more features available, checkout the live demo below and have a play around on the app. 
     </p>
     <a href="https://github.com/bellaroyle/Mr-Men-News-Backend"><button class="more-info">Backend Code</button></a>
-
     <a href="https://github.com/bellaroyle/Mr-Men-News-Frontend"><button class="more-info">Frontend Code</button></a>
-    <a href="https://mr-men-news.netlify.app/"><button class="more-info">Hosted Site</button></a>
+    <a href="https://mr-men-news.netlify.app/"><button class="more-info">Live Demo</button></a>
 
 
 </body>
