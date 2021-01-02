@@ -14,8 +14,8 @@
   box-shadow: 1px 5px 5px 1px rgba(38, 19, 44, 0.322);
   margin: 5px;
   max-width: 100%;
-  min-width: 350px;
-  min-height: 350px;
+  min-width: 300px;
+  min-height: 300px;
   position: relative;
 }
 
