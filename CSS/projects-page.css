@@ -28,7 +28,7 @@
   height: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .projects:hover .overlay,
@@ -49,7 +49,9 @@
 #pokemon {
   background-image: url("../media/pokemon-screenshot.png");
 }
-
+#website {
+  background-image: url("../media/website-screenshot.png");
+}
 .project-buttons {
   font-size: 16px;
   font-weight: bold;
