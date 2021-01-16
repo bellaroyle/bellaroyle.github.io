@@ -1,4 +1,7 @@
 /* ABOUT PAGE */
+#about-page {
+  background-color: rgba(236, 236, 236, 0.438);
+}
 
 #me-intro {
   margin: 20px auto;
