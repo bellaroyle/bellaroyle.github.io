@@ -1,5 +1,7 @@
 #projects-page {
   background-image: url('../media/keyboard-background-blurred.jpg');
+  background-size: 100%;
+  /* background-repeat: repeat-y; */
 }
 #projects-page h1 {
   color: white;
