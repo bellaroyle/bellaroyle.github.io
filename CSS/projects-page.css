@@ -1,5 +1,9 @@
 #projects-page {
-  background-color: rgba(236, 236, 236, 0.438);
+  background-image: url('../media/keyboard-background-blurred.jpg');
+}
+#projects-page h1 {
+  color: white;
+  /* font-family: 'Nunito'; */
 }
 
 #projects-container {
@@ -17,7 +21,7 @@
   cursor: pointer;
   display: flex;
   flex-grow: 1;
-  box-shadow: 1px 5px 5px 1px rgba(38, 19, 44, 0.322);
+  /* box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.322); */
   margin: 10px;
   max-width: 100%;
   min-width: 300px;
@@ -39,7 +43,10 @@
   height: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects:hover .overlay,
@@ -82,9 +89,13 @@
 .project-buttons:active .projects .overlay {
   opacity: 95%;
 }
-
+.white-text {
+  color: white;
+}
 #github-link {
   font-size: 30px;
+  color: white;
+  padding-bottom: 30px;
 }
 
 #github-link:hover,
