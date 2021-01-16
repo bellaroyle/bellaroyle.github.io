@@ -1,8 +1,16 @@
 /* ABOUT PAGE */
 #about-page {
   background-color: rgba(236, 236, 236, 0.438);
+  display: flex;
+  /* padding: 75px; */
 }
-
+@media screen and (min-width: 1500px) {
+  #about-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 #me-intro {
   margin: 20px auto;
   width: 100%;
@@ -59,4 +67,46 @@
 }
 strong {
   font-weight: 600;
+}
+
+#what-i-do-container {
+  margin-left: 80px;
+  margin-right: 100px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+#what-i-do {
+  display: flex;
+  flex-direction: column;
+
+  /* flex-wrap: wrap; */
+  /* margin: 30px; */
+  justify-content: center;
+}
+.what-i-do-box {
+  /* padding: 50px; */
+  min-width: 300px;
+  max-width: 350px;
+  margin: 20px;
+  /* border: 1px solid green; */
+}
+@media screen and (max-width: 1500px) {
+  #what-i-do {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .what-i-do-box {
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 5px;
+    /* border: 1px solid green; */
+  }
 }

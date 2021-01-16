@@ -1,163 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Bella Royle</title>
 
     <!-- links to style sheets & JS -->
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="stylesheet" href="./CSS/home-page.css">
-    <link rel="stylesheet" href="./CSS/about-page.css">
-    <link rel="stylesheet" href="./CSS/projects-page.css">
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/home-page.css" />
+    <link rel="stylesheet" href="./CSS/about-page.css" />
+    <link rel="stylesheet" href="./CSS/projects-page.css" />
     <script src="./index.js" defer></script>
 
     <!-- links for icons & fonts  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <script src="https://kit.fontawesome.com/28b4b4614e.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/28b4b4614e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico" />
 
     <script src="./particles.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <main>
-        <nav id="navbar">
-            <a href="#home-page">Home</a>
-            <a href="#about-page">About</a>
-            <a href="#projects-page">Work</a>
-        </nav>
-        <section id="home-page">
-
-            <canvas id="canvas1" font-family="Permanent Marker" tabindex="0"></canvas>
-            <script>
-                if (window.innerHeight > window.innerWidth)
-                    document.getElementById("canvas1").id = "canvas2";
-            </script>
-            <div class="socials">
-
-                <br />
-                <br />
-                <a href="mailto:bellarroyle@gmail.com" style=" text-decoration: none;" title="email">
-                    <i class="fas fa-envelope-square social-icon" title="Email"></i></a>
-                <a style=" text-decoration: none;" href="https://github.com/bellaroyle" title="Github">
-                    <i class="fab fa-github social-icon" title="Github"></i></a>
-                <a style=" text-decoration: none;" href="https://www.linkedin.com/in/bella-royle-a55632197/"
-                    title="LinkedIn"><i class="fab fa-linkedin social-icon" title="LinkedIn"></i></a>
-                </div>
-        </section>
-
-        <section id="about-page">
-            <h1>About Me</h1>
-            <div id="me-intro">
-                <div id="pic-box">
-                    <img src="media/me.jpeg" alt="Bella smiling">
-                </div>
-                <div id="paragraph-box">
-                    <h2>Hi, I'm Bella!</h2>
-                    <p>
-                        I'm a Full Stack developer, maths graduate and newbie running enthusiast.
-                        <br>
-                        <br>
-                        I first learnt to code in my third year at university. 
-                        I soon understood the importance of a logical approach and realised that my problem-solving skills would help me fix any bugs in my code 
-                        (which nine times out of ten was revealed to be a typo. Thankfully I discovered code spell checker extensions).
-                        <br>
-                        <br>
-                        Once I finished university, I knew that I wanted to follow a career in software development and that I wanted to learn as much as I could as fast as I could. 
-                        After weighing up the pros and cons of the paths available to me, I settled on a bootcamp, which would allow me to learn workplace best practices such as 
-                        <strong>version control</strong> and <strong>Test Driven Development (TDD)</strong>, as well as to practise skills that I had touched on while learning Python 
-                        at university, such as <strong>pair-programming</strong> and <strong>remote collaboration</strong>.
-                        <br>
-                        <br>
-                        Having (very nearly) completed Northcoders' software development bootcamp, 
-                        I am looking to take the next step and put my new skills to the test by starting a junior software developer role.
-                    </p>
-            <h3>Languages & Tools: </h3>
-            <div id="skills-container">
-                <p><i class="devicon-html5-plain-wordmark colored" title="HTML5"></i> HTML</p>
-                <p><i class="devicon-css3-plain-wordmark colored" title="CSS3"></i> CSS</p>
-                <p><i class="devicon-javascript-plain colored" title="JavaScript"></i> JavaScript</p>
-                <p><i class="devicon-nodejs-plain colored" title="Node.js"></i> Node.js</p>
-                <p><i class="devicon-python-plain colored" title="Python"></i> Python</p>
-                <p><i class="devicon-postgresql-plain colored" title="postgreSQL"></i> PostgreSQL</p>
-                <p><i class="devicon-express-original colored"></i>Express</p>
-                <p><i class="devicon-react-original colored"></i>React & React Native</p>
-                <p><i class="devicon-visualstudio-plain colored" title="VS Code"></i> Visual Studio Code</p>
-                <p><i class="devicon-github-plain colored" title="Github"></i> GitHub</p>
-
-            </div>
+      <nav id="navbar">
+        <a href="#home-page">Home</a>
+        <a href="#about-page">About</a>
+        <a href="#projects-page">Work</a>
+      </nav>
+      <section id="home-page">
+        <canvas
+          id="canvas1"
+          font-family="Permanent Marker"
+          tabindex="0"
+        ></canvas>
+        <script>
+          if (window.innerHeight > window.innerWidth)
+            document.getElementById('canvas1').id = 'canvas2';
+        </script>
+        <div class="socials">
+          <br />
+          <br />
+          <a
+            href="mailto:bellarroyle@gmail.com"
+            style="text-decoration: none"
+            title="email"
+          >
+            <i class="fas fa-envelope-square social-icon" title="Email"></i
+          ></a>
+          <a
+            style="text-decoration: none"
+            href="https://github.com/bellaroyle"
+            title="Github"
+          >
+            <i class="fab fa-github social-icon" title="Github"></i
+          ></a>
+          <a
+            style="text-decoration: none"
+            href="https://www.linkedin.com/in/bella-royle-a55632197/"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin social-icon" title="LinkedIn"></i
+          ></a>
         </div>
-        <a href="#projects-page">
-            <i class="fas fa-chevron-down" id="next-page"></i>
-        </a>
-        </section>
+      </section>
 
-        <section id="projects-page">
-            <h1>My Work</h1>
-
-            <div id="projects-container">
-
-                <div class="projects">
-                    <div class="project-images" id="website"></div>
-                    <div class="overlay">
-                        <h2>This Website!</h2>
-                        <p>
-                            HTML | CSS | JavaScript
-                        </p>
-                        <p>Welcome to my portfolio!</p>
-                        <a href="./projects/website.html"><button class="project-buttons">More Info</button></a>
-                    </div>
-                </div>
-
-                <div class="projects" tabindex="0">
-                    <div class="project-images" id="mr-men-news"></div>
-                    <div class="overlay">
-                        <h2>Mr Men News</h2>
-                        <p>
-                            React | JavaScript | CSS | Express | postgreSQL | axios | Jest
-                        </p>
-                        <p>A full stack reddit-style news app</p>
-                        <a href="./projects/mr-men-news.html"><button class="project-buttons">More Info</button></a>
-                    </div>
-                </div>
-
-
-                <div class="projects" tabindex="0">
-                    <div class="project-images" id="pokemon"></div>
-                    <div class="overlay">
-                        <h2>Pokemon Battler</h2>
-                        <p>
-                            JavaScript | Inquirer.js
-                        </p>
-                        <p>A Pokemon battler game that can be played in your computer's terminal</p>
-                        <a href="./projects/pokemon.html"><button class="project-buttons">More Info</button></a>
-                    </div>
-                </div>
-
-              
-
+      <section id="about-page">
+        <h1>About Me</h1>
+        <div id="about-body">
+          <div id="me-intro">
+            <h2>Who I am</h2>
+            <div id="pic-box">
+              <img src="media/me.jpeg" alt="Bella smiling" />
             </div>
-            <p class='white-text'>View more of my work:</p>
-            <a style=" text-decoration: none;" href="https://github.com/bellaroyle"><i
-                    class="devicon-github-plain colored" title="My Github" id="github-link"></i></a>
-        </section>
+            <div id="paragraph-box">
+              <h2>Hi, I'm Bella!</h2>
+              <p>
+                I'm a Full Stack developer, maths graduate and newbie running
+                enthusiast.
+                <br />
+                <br />
+                I first learnt to code in my third year at university. I soon
+                understood the importance of a logical approach and realised
+                that my problem-solving skills would help me fix any bugs in my
+                code (which nine times out of ten was revealed to be a typo.
+                Thankfully I discovered code spell checker extensions).
+                <br />
+                <br />
+                Once I finished university, I knew that I wanted to follow a
+                career in software development and that I wanted to learn as
+                much as I could as fast as I could. After weighing up the pros
+                and cons of the paths available to me, I settled on a bootcamp,
+                which would allow me to learn workplace best practices such as
+                <strong>version control</strong> and
+                <strong>Test Driven Development (TDD)</strong>, as well as to
+                practise skills that I had touched on while learning Python at
+                university, such as <strong>pair-programming</strong> and
+                <strong>remote collaboration</strong>.
+                <br />
+                <br />
+                Having (very nearly) completed Northcoders' software development
+                bootcamp, I am looking to take the next step and put my new
+                skills to the test by starting a junior software developer role.
+              </p>
+              <h3>Languages & Tools:</h3>
+              <div id="skills-container">
+                <p>
+                  <i
+                    class="devicon-html5-plain-wordmark colored"
+                    title="HTML5"
+                  ></i>
+                  HTML
+                </p>
+                <p>
+                  <i
+                    class="devicon-css3-plain-wordmark colored"
+                    title="CSS3"
+                  ></i>
+                  CSS
+                </p>
+                <p>
+                  <i
+                    class="devicon-javascript-plain colored"
+                    title="JavaScript"
+                  ></i>
+                  JavaScript
+                </p>
+                <p>
+                  <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                  Node.js
+                </p>
+                <p>
+                  <i class="devicon-python-plain colored" title="Python"></i>
+                  Python
+                </p>
+                <p>
+                  <i
+                    class="devicon-postgresql-plain colored"
+                    title="postgreSQL"
+                  ></i>
+                  PostgreSQL
+                </p>
+                <p><i class="devicon-express-original colored"></i>Express</p>
+                <p>
+                  <i class="devicon-react-original colored"></i>React & React
+                  Native
+                </p>
+                <p>
+                  <i
+                    class="devicon-visualstudio-plain colored"
+                    title="VS Code"
+                  ></i>
+                  Visual Studio Code
+                </p>
+                <p>
+                  <i class="devicon-github-plain colored" title="Github"></i>
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="what-i-do-container">
+            <h2>What I do</h2>
+            <div id="what-i-do">
+              <div class="what-i-do-box">
+                <h3>Web Development</h3>
+                <p>
+                  filler paragraph here i create blah blah blah web development
+                  woo lets beef this up abit jvrio[ gbino engjernf io[agnior
+                  nigoe]]
+                </p>
+              </div>
+              <div class="what-i-do-box">
+                <h3>App Development</h3>
+                <p>
+                  filler paragraph here i create blah blah blah App development
+                  woo lets beef this up abitjrioop' rgv rnbv ergb rt g h rt h rs
+                  h r
+                </p>
+              </div>
+              <div class="what-i-do-box">
+                <h3>Personal Development</h3>
+                <p>
+                  filler paragraph here. i will write about continuous learning
+                  etc blah blah blah lolr gte rhy rt y rw y r y es t 4e y5 yh r
+                  yhg tr
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#projects-page">
+            <i class="fas fa-chevron-down" id="next-page"></i>
+        </a> -->
+      </section>
+
+      <section id="projects-page">
+        <h1>My Work</h1>
+
+        <div id="projects-container">
+          <div class="projects">
+            <div class="project-images" id="website"></div>
+            <div class="overlay">
+              <h2>This Website!</h2>
+              <p>HTML | CSS | JavaScript</p>
+              <p>Welcome to my portfolio!</p>
+              <a href="./projects/website.html"
+                ><button class="project-buttons">More Info</button></a
+              >
+            </div>
+          </div>
+
+          <div class="projects" tabindex="0">
+            <div class="project-images" id="mr-men-news"></div>
+            <div class="overlay">
+              <h2>Mr Men News</h2>
+              <p>
+                React | JavaScript | CSS | Express | postgreSQL | axios | Jest
+              </p>
+              <p>A full stack reddit-style news app</p>
+              <a href="./projects/mr-men-news.html"
+                ><button class="project-buttons">More Info</button></a
+              >
+            </div>
+          </div>
+
+          <div class="projects" tabindex="0">
+            <div class="project-images" id="pokemon"></div>
+            <div class="overlay">
+              <h2>Pokemon Battler</h2>
+              <p>JavaScript | Inquirer.js</p>
+              <p>
+                A Pokemon battler game that can be played in your computer's
+                terminal
+              </p>
+              <a href="./projects/pokemon.html"
+                ><button class="project-buttons">More Info</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="white-text">View more of my work:</p>
+        <a style="text-decoration: none" href="https://github.com/bellaroyle"
+          ><i
+            class="devicon-github-plain colored"
+            title="My Github"
+            id="github-link"
+          ></i
+        ></a>
+      </section>
     </main>
     <footer>
-        Bella Royle 2021
-        <!-- <div></div> -->
-            <a href="mailto:bellarroyle@gmail.com" style=" text-decoration: none;" title="email">
-            <i class="fas fa-envelope-square social-icon" title="Email"></i></a>
-        <a style=" text-decoration: none;" href="https://github.com/bellaroyle" title="Github">
-            <i class="fab fa-github social-icon" title="Github"></i></a>
-        <a style=" text-decoration: none;" href="https://www.linkedin.com/in/bella-royle-a55632197/"
-            title="LinkedIn"><i class="fab fa-linkedin social-icon" title="LinkedIn"></i></a>
-        <!-- </div> -->
-   </footer>
-</body>
+      Bella Royle 2021
+      <!-- <div></div> -->
+      <a
+        href="mailto:bellarroyle@gmail.com"
+        style="text-decoration: none"
+        title="email"
+      >
+        <i class="fas fa-envelope-square social-icon" title="Email"></i
+      ></a>
+      <a
+        style="text-decoration: none"
+        href="https://github.com/bellaroyle"
+        title="Github"
+      >
+        <i class="fab fa-github social-icon" title="Github"></i
+      ></a>
+      <a
+        style="text-decoration: none"
+        href="https://www.linkedin.com/in/bella-royle-a55632197/"
+        title="LinkedIn"
+        ><i class="fab fa-linkedin social-icon" title="LinkedIn"></i
+      ></a>
+      <!-- </div> -->
+    </footer>
+  </body>
 </html>
