@@ -73,3 +73,12 @@ footer i {
   flex-direction: row;
   align-items: center;
 }
+.social-icon {
+  /* text-decoration: none; */
+  color: white;
+  margin: 3px;
+}
+.social-icon:hover,
+.socialicon:focus {
+  color: rgb(84, 14, 175);
+}
