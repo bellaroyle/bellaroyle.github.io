@@ -55,27 +55,21 @@ section {
 footer {
   bottom: 0;
   width: 100%;
-  /* padding-top: 15px; */
-  padding: 10px;
+  padding: 20px;
   height: 50px;
   background-color: #131313;
   color: white;
-  text-align: right;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  /* color: rgba(11, 207, 181, 1); */
+  justify-content: space-between;
+  align-items: center;
 }
 footer i {
   font-size: 30px;
+  /* padding-left: 10px; */
 }
-/* #menu {
-  text-align: right;
+#name-and-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-#menu-button {
-  margin-right: 20px;
-  margin-top: 15px;
-  background-color: white;
-  font-size: 40px;
-  border: none;
-} */
