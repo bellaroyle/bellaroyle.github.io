@@ -17,7 +17,7 @@ if (document.getElementById('canvas1')) {
     canvas = document.getElementById('canvas1');
     canvas.width = 1200;
     canvas.height = 600;
-    adjustX = 280;
+    adjustX = 295;
     adjustY = 180;
 
     window.addEventListener('mousemove', (event) => {
@@ -28,7 +28,7 @@ if (document.getElementById('canvas1')) {
     canvas = document.getElementById('canvas1');
     canvas.width = 800;
     canvas.height = 600;
-    adjustX = 160;
+    adjustX = 165;
     adjustY = 200;
 
     window.addEventListener('mousemove', (event) => {
@@ -74,11 +74,11 @@ if (document.getElementById('canvas1')) {
   if (window.innerWidth > 1200) {
     // creates text and stores the coordinates of it in an array
     ctx.font = 'italic 120px American Typewriter';
-    ctx.fillText('Bella  Royle', 0, 90);
+    ctx.fillText('Bella Royle', 0, 90);
     textCoordinates = ctx.getImageData(0, 0, 1000, 150);
   } else {
     ctx.font = 'italic 90px American Typewriter';
-    ctx.fillText('Bella  Royle', 0, 70);
+    ctx.fillText('Bella Royle', 0, 70);
     textCoordinates = ctx.getImageData(0, 0, 1000, 150);
   }
 } else {

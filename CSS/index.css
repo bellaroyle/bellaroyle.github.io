@@ -35,7 +35,7 @@ nav a:hover {
 h1 {
   font-weight: 500;
   font-size: 45px;
-  border-bottom: 5px dashed #3dccccc0;
+  /* border-bottom: 5px dashed #3dccccc0; */
   /* font-family: "American Typewriter"; */
 }
 
