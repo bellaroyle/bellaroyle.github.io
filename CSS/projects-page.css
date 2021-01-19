@@ -63,6 +63,9 @@
   background-position: center;
   background-size: cover;
 }
+#MemeWhatYouSay {
+  background-image: url('../media/MemeWhatYouSay.jpg');
+}
 #mr-men-news {
   background-image: url('../media/mr-men-news-screenshot.png');
 }
