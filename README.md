@@ -1,3 +1,16 @@
 # Portfolio Website
 
-This is the code for my portfolio website.
+## Table of Contents
+
+- [About](#about)
+- [Technologies Used](#technologies-used)
+
+## About
+
+This is the repository for my portfolio website.
+
+## Technologies Used
+
+- JavaScript
+- HTML
+- CSS
