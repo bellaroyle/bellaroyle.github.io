@@ -38,18 +38,21 @@
   outline: none;
 }
 
-#how-it-works {
+#how-it-works,
+#game-rules {
   text-align: left;
   margin: 0px auto;
   /* padding: 10px; */
   max-width: 810px;
 }
-#how-it-works h2 {
+#how-it-works h2,
+#game-rules h2 {
   font-size: 22px;
   padding-left: 10px;
 }
 
-#how-it-works h3 {
+#how-it-works h3,
+#game-rules h3 {
   font-size: 18px;
   margin-bottom: 0;
 }
