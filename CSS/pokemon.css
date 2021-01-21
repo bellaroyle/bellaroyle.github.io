@@ -1,0 +1,10 @@
+#background {
+  opacity: 0.1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: -1;
+}
