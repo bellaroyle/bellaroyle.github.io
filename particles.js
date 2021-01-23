@@ -63,12 +63,6 @@ if (document.getElementById('canvas1')) {
 const ctx = canvas.getContext('2d');
 ctx.fillStyle = 'white';
 let textCoordinates = [];
-// const markerFont = new FontFace('Lucida Console', 'url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap)')
-// markerFont.load().then((loadedFace) => {
-//     document.fonts.add(loadedFace)
-// }).catch(err => {
-//     console.dir(err)
-// })
 
 if (document.getElementById('canvas1')) {
   if (window.innerWidth > 1200) {
@@ -89,8 +83,8 @@ if (document.getElementById('canvas1')) {
     textCoordinates = ctx.getImageData(0, 0, 1000, 300);
   } else {
     ctx.font = 'italic 90px American Typewriter';
-    ctx.fillText(' Bella ', 0, 70);
-    ctx.fillText(' Royle ', 0, 155);
+    ctx.fillText(' Bella ', 0, 125);
+    ctx.fillText(' Royle ', 0, 205);
     textCoordinates = ctx.getImageData(0, 0, 1000, 300);
   }
 }
