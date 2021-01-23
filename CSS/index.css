@@ -82,8 +82,19 @@ footer i {
   /* text-decoration: none; */
   color: white;
   margin: 3px;
+  margin-bottom: 10px;
 }
 .social-icon:hover,
 .socialicon:focus {
   color: rgb(84, 14, 175);
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    flex-direction: column;
+    height: 80px;
+  }
+  #name-and-icons {
+    margin: 10px;
+  }
 }
