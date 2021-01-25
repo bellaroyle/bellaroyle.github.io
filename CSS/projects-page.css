@@ -101,9 +101,9 @@
   font-size: 30px;
   color: white;
   padding-bottom: 30px;
+  transition: all 0.3s ease-in-out;
 }
-
-#github-link:hover,
-#github-link:focus {
-  font-size: 30px;
+.github-link:hover,
+.github-link:focus {
+  transform: scale(1.1);
 }
